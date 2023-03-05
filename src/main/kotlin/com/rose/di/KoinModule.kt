@@ -8,7 +8,7 @@ import org.litote.kmongo.reactivestreams.KMongo
 
 val koinModule = module {
     single {
-        KMongo.createClient()
+        KMongo.createClient(System.getenv("MONGO_DB"))
             .coroutine
             .getDatabase("user_database")
     }
