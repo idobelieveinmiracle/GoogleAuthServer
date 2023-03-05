@@ -1,0 +1,1 @@
+rootProject.name = "com.rose.google-auth-server"
